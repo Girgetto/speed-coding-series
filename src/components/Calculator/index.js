@@ -1,22 +1,23 @@
-import React from "react";
+import React, { useReducer } from "react";
 
 import Row from "./components/Row";
+import { calculatorsButtons, initialState, reducer } from "./utils";
 
-const elements = [
-  ["DEL", "+/-", "%", "/"],
-  ["7", "8", "9", "*"],
-  ["4", "5", "6", "-"],
-  ["1", "2", "3", "+"],
-  ["0", ",", "="],
-];
+const renderRows = (dispatch) =>
+  calculatorsButtons.map((e, i) => (
+    <Row rowElements={calculatorsButtons[i]} key={i} dispatch={dispatch} />
+  ));
 
-const renderRows = () =>
-  elements.map((e, i) => <Row rowElements={elements[i]} i={i} />);
+const Index = () => {
+  const [state, dispatch] = useReducer(reducer, initialState);
 
-const index = () => (
-  <table>
-    <tbody>{renderRows()}</tbody>
-  </table>
-);
+  console.log(state);
 
-export default index;
+  return (
+    <table>
+      <tbody>{renderRows(dispatch)}</tbody>
+    </table>
+  );
+};
+
+export default Index;
