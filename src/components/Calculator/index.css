@@ -1,0 +1,61 @@
+table {
+  width: 350px;
+  height: 532px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  filter: drop-shadow(10px 9px 16px rgba(0, 0, 0, 0.25));
+  border-collapse: separate;
+}
+
+th {
+  width: 349px;
+  height: 97px;
+  background: #ffffff;
+  box-sizing: border-box;
+  text-align: right;
+  padding: 15px;
+  border-radius: 15px 15px 0 0;
+}
+
+tbody tr:last-child td:last-child {
+  border-radius: 0 0 15px 0;
+}
+
+tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 15px;
+}
+
+td,
+th {
+  border: 2px solid white;
+  font-style: normal;
+  font-weight: normal;
+}
+
+td {
+  font-size: 31px;
+  width: 87px;
+}
+
+th {
+  font-size: 62px;
+  line-height: 36px;
+}
+
+td:nth-child(-n + 3) {
+  background: #ececec;
+}
+
+td:nth-child(4) {
+  background: #f9f871;
+}
+
+.expression {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 18px;
+  text-align: right;
+  color: #929292;
+}
