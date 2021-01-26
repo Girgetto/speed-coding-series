@@ -4,6 +4,7 @@ const DataCell = (rowElements, dispatch) => {
   return rowElements.map((e, i) => (
     <td
       key={i}
+      colSpan={e !== "=" ? 1 : 2}
       onClick={() => {
         dispatch(e);
       }}

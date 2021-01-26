@@ -11,11 +11,12 @@ export const initialState = { expression: "", result: 0 };
 export const reducer = (state, action) => {
   switch (action) {
     case "=":
+      if (state.expression === "") return;
       // eslint-disable-next-line no-eval
-      return { ...state, result: eval(state.expression) };
+      return { expression: "", result: eval(state.expression) };
     case "DEL":
-      return { ...state, expression: "" };
+      return { result: 0, expression: "" };
     default:
-      return { ...state, expression: state.expression + action };
+      return { result: 0, expression: state.expression + action };
   }
 };
