@@ -11,7 +11,7 @@ table {
 th {
   width: 349px;
   height: 97px;
-  background: #ffffff;
+  background: #fff;
   box-sizing: border-box;
   text-align: right;
   padding: 15px;
@@ -29,8 +29,6 @@ tbody tr:last-child td:first-child {
 td,
 th {
   border: 2px solid white;
-  font-style: normal;
-  font-weight: normal;
 }
 
 td {
@@ -52,8 +50,6 @@ td:nth-child(4) {
 }
 
 .expression {
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 18px;
   text-align: right;
