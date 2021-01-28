@@ -1,14 +1,17 @@
 import React from "react";
 
-const DataCell = (rowElements, dispatch) =>
-  rowElements.map((e, i) => (
+const DataCell = (rowElements, dispatch) => {
+  return rowElements.map((e, i) => (
     <td
       key={i}
       colSpan={e !== "=" ? 1 : 2}
       onClick={() => {
         dispatch(e);
       }}
-    >{e}</td>
+    >
+      {e}
+    </td>
   ));
+};
 
 export default DataCell;
