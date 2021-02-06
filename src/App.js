@@ -1,8 +1,7 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import "./App.css";
-import Calculator from "./components/Calculator";
-import Home from "./components/Home";
+import { Calculator, ToDoList, Home } from "./components";
 
 function App() {
   return (
@@ -12,6 +11,9 @@ function App() {
           <Link to="/">Home</Link>
         </navbar>
         <Switch>
+          <Route path="/to-do">
+            <ToDoList />
+          </Route>
           <Route path="/calculator">
             <Calculator />
           </Route>
