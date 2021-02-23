@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import { Calculator, ToDoList, Home } from "./components";
 
-function App() {
+function Routes() {
   return (
     <div className="App">
       <Router>
@@ -26,4 +26,4 @@ function App() {
   );
 }
 
-export default App;
+export default Routes;
