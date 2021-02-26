@@ -29,6 +29,7 @@ tbody tr:last-child td:first-child {
 td,
 th {
   border: 2px solid white;
+  cursor: pointer;
 }
 
 td {

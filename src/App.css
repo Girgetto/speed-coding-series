@@ -16,3 +16,19 @@ code {
   align-items: center;
   height: 100vh;
 }
+
+.routes-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.routes-list > a {
+  line-height: 1.5rem;
+}
+
+navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+}

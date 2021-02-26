@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import "./index.css";
+
 const ToDoList = () => {
   const [list, setList] = useState([]);
 
@@ -29,10 +31,10 @@ const ToDoList = () => {
     setList(listModified);
   };
 
-  const List = (list) => (
-    <ul>
+  const List = () => (
+    <ul className="list">
       {list.map((task) => (
-        <li>
+        <li className="to-do" key={task._id}>
           <p
             style={{
               textDecorationLine: task.isDone ? "line-through" : null,
@@ -40,16 +42,26 @@ const ToDoList = () => {
           >
             {task.description}
           </p>
-          <input type="radio" onClick={() => handleClickIsDone(task)} />
-          <p onClick={() => handleClickRemove(task)}>X</p>
+          <div className="clickable">
+            <input
+              type="radio"
+              onChange={() => handleClickIsDone(task)}
+              checked={task.isDone}
+            />
+            <b onClick={() => handleClickRemove(task)}>X</b>
+          </div>
         </li>
       ))}
     </ul>
   );
 
   return (
-    <div>
-      <input placeholder="Add TO DO" onKeyDown={handleKeyDown} />
+    <div className="container">
+      <input
+        placeholder="Add TO DO"
+        className="to-do-input"
+        onKeyDown={handleKeyDown}
+      />
       <List list={list} />
     </div>
   );
