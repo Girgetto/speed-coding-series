@@ -8,10 +8,13 @@ export const calculatorsButtons = [
 
 export const initialState = { expression: "", result: 0 };
 
+const invalidInputs = ["DEL", "+/-", "%", "/", "*", "-", "+", ""];
+
 export const reducer = (state, action) => {
   switch (action) {
     case "=":
-      if (state.expression === "") return;
+      if (invalidInputs.some((el) => state.expression === el))
+        return { result: 0, expression: "" };
       // eslint-disable-next-line no-eval
       return { expression: "", result: eval(state.expression) };
     case "DEL":

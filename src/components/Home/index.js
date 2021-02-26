@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Home = (props) => {
+const Home = () => {
   return (
-    <div>
+    <div className="routes-list">
       <Link to="/calculator">Calculator</Link>
+      <Link to="/to-do">To Do List</Link>
     </div>
   );
 };
