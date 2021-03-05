@@ -1,0 +1,57 @@
+.list {
+  padding: 0;
+}
+
+.to-do {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 417px;
+  height: 42px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.09em;
+  text-align: left;
+  margin: 1rem;
+}
+
+.clickable {
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+}
+
+input[type="radio"] {
+  transform: scale(2);
+  margin: 0;
+}
+
+.to-do-input {
+  width: 477px;
+  height: 93px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 1rem;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.09em;
+
+  color: #000000;
+}
