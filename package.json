@@ -1,7 +1,6 @@
 {
   "name": "speed-coding-series",
   "version": "0.1.0",
-  "private": true,
   "homepage": "https://girgetto.github.io/speed-coding-series/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
