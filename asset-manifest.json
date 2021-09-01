@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/speed-coding-series/static/css/main.ef1080d8.chunk.css",
+    "main.js": "/speed-coding-series/static/js/main.30413189.chunk.js",
+    "main.js.map": "/speed-coding-series/static/js/main.30413189.chunk.js.map",
+    "runtime-main.js": "/speed-coding-series/static/js/runtime-main.3d34fc5f.js",
+    "runtime-main.js.map": "/speed-coding-series/static/js/runtime-main.3d34fc5f.js.map",
+    "static/js/2.a9ae32f1.chunk.js": "/speed-coding-series/static/js/2.a9ae32f1.chunk.js",
+    "static/js/2.a9ae32f1.chunk.js.map": "/speed-coding-series/static/js/2.a9ae32f1.chunk.js.map",
+    "static/js/3.35cc59d3.chunk.js": "/speed-coding-series/static/js/3.35cc59d3.chunk.js",
+    "static/js/3.35cc59d3.chunk.js.map": "/speed-coding-series/static/js/3.35cc59d3.chunk.js.map",
+    "index.html": "/speed-coding-series/index.html",
+    "static/css/main.ef1080d8.chunk.css.map": "/speed-coding-series/static/css/main.ef1080d8.chunk.css.map",
+    "static/js/2.a9ae32f1.chunk.js.LICENSE.txt": "/speed-coding-series/static/js/2.a9ae32f1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3d34fc5f.js",
+    "static/js/2.a9ae32f1.chunk.js",
+    "static/css/main.ef1080d8.chunk.css",
+    "static/js/main.30413189.chunk.js"
+  ]
+}
